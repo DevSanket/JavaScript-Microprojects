@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Keeper</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/efb0965e4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">    
+</head>
+<body>
+       <!-- Open Model   -->
+       <h1 id="show-modal">Add Bookmark</h1>
+       <!-- BookMark  -->
+       <div id="bookmarks-container" class="container">
+            <div class="items">
+                <i class="fas fa-times" id="delete-bookmark" title="Delete"></i>
+                
+                <div class="name">
+                    <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_apache_icon_130750.png" alt="Favicon">
+                    <a href="https://www.tkinter.com">Tkinter</a>
+                </div>
+            </div>
+            <div class="items">
+                <i class="fas fa-times" id="delete-bookmark" title="delete"></i>
+                <div class="name">
+                    <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_apache_icon_130750.png" alt="Favicon">
+                    <a href="https://www.tkinter.com">Tkinter</a>
+                </div>
+            </div>
+            <div class="items">
+                <i class="fas fa-times" id="delete-bookmark" title="delete"></i>
+                <div class="name">
+                    <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_apache_icon_130750.png" alt="Favicon">
+                    <a href="https://www.tkinter.com">Tkinter</a>
+                </div>
+            </div>
+    </div>
+    <!-- Modal  -->
+    <div class="modal-container " id="modal"> 
+        <!-- Add show Modal to class  -->
+        <div class="modal">
+            <i class="fas fa-times close-icon" id="close-modal"></i>
+            <div class="modal-header">
+                <h3>Add Bookmark</h3>
+            </div>
+            <div class="modal-content">
+                <form id="bookmark-form">
+                    <!-- Website Name  -->
+                    <div class="form-group">
+                        <label for="website-name" class="form-label">Website Name</label>
+                        <input type="text" class="form-input" id="website-name">
+                    </div>
+                    <!-- Website url  -->
+                    <div class="form-group">
+                        <label for="website-url" class="form-label">Website url</label>
+                        <input type="text" class="form-input" id="website-url">
+                    </div>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript file  -->
+    <script src="script.js"></script>
+</body>
+</html>
